@@ -14,11 +14,10 @@ resources in development mode and correctly serve static resources.
 If you're using Leiningen 1, you'll need to install the following plugins:
 
     lein plugin install lein-newnew 0.2.6
-    lein plugin install compojure/lein-template 0.2.3
+    lein plugin install compojure-app/lein-template 0.2.3
 
-If you're using Leiningen 2, you don't have to do anything; the template
-will be automatically downloaded and installed when you first run the
-command.
+
+If you're using Leiningen 2, add a plugin dependency on `[clojurewerkz/lein-template "1.2.0"]` to your `~/.lein/profiles.clj`.
 
 ## Usage
 

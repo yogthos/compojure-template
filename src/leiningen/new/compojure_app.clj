@@ -13,7 +13,7 @@
   (let [data {:name name
               :sanitized (sanitize name)
               :year (year)}
-        render #((renderer "compojure") % data)]
+        render #((renderer "compojure_app") % data)]
     (println "Generating a lovely new Compojure project named" (str name "..."))
     (->files data
              [".gitignore"  (render "gitignore")]
