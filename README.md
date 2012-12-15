@@ -17,7 +17,7 @@ If you're using Leiningen 1, you'll need to install the following plugins:
     lein plugin install compojure-app/lein-template 0.2.3
 
 
-If you're using Leiningen 2, add a plugin dependency on `[clojurewerkz/lein-template "1.2.0"]` to your `~/.lein/profiles.clj`.
+If you're using Leiningen 2, add a plugin dependency on `[compojure-app/lein-template "0.2.3"]` to your `~/.lein/profiles.clj`.
 
 ## Usage
 
