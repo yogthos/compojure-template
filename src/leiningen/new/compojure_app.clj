@@ -1,4 +1,4 @@
-(ns leiningen.new.compojure
+(ns leiningen.new.compojure-app
   (:use [leiningen.new.templates :only [renderer sanitize year ->files]]
         [leinjacker.utils :only [lein-generation]]))
 
