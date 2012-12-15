@@ -14,16 +14,16 @@ resources in development mode and correctly serve static resources.
 If you're using Leiningen 1, you'll need to install the following plugins:
 
     lein plugin install lein-newnew 0.2.6
-    lein plugin install compojure-app/lein-template 0.2.3
+    lein plugin install compojure-app/lein-template 0.2.6
 
 
-If you're using Leiningen 2, add a plugin dependency on `[compojure-app/lein-template "0.2.3"]` to your `~/.lein/profiles.clj`.
+If you're using Leiningen 2, add a plugin dependency on `[compojure-app/lein-template "0.2.6"]` to your `~/.lein/profiles.clj`.
 
 ## Usage
 
 Run the following command to create a new Compojure project:
 
-    lein new compojure <your project name>
+    lein new compojure-app <your project name>
 
 ## License
 
