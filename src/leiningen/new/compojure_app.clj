@@ -7,7 +7,7 @@
     "project_lein2.clj"
     "project_lein1.clj"))
 
-(defn compojure
+(defn compojure-app
   "Create a new Compojure project"
   [name]
   (let [data {:name name

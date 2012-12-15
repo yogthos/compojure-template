@@ -1,4 +1,4 @@
-(defproject compojure-app/lein-template "0.2.3"
+(defproject compojure-app/lein-template "0.2.4"
   :description "Compojure project template for Leiningen"
   :url "https://github.com/yogthos/compojure-template"
   :eval-in-leiningen true
