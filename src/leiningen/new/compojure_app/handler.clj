@@ -1,7 +1,8 @@
 (ns {{name}}.handler
   (:use compojure.core                
         ring.middleware.resource
-        ring.middleware.file-info)
+        ring.middleware.file-info
+        hiccup.middleware)
   (:require [compojure.handler :as handler]
             [compojure.route :as route]
             [{{name}}.common :as common]))
@@ -19,6 +20,7 @@
 (def war-handler 
   (-> app    
     (wrap-resource "public") 
+    (wrap-base-url)
     (wrap-file-info)))
   
 
