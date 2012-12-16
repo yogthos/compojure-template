@@ -7,11 +7,11 @@
             [compojure.route :as route]
             [{{name}}.common :as common]))
 
-(common/page home params 
+(defn home [] 
   (common/layout [:h1 "Hello World!"]))
 
 (defroutes app-routes
-  (GET "/" [] (home []))
+  (GET "/" [] (home))
   (route/resources "/")
   (route/not-found "Not Found"))
 

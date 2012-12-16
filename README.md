@@ -16,9 +16,9 @@ If you're using Leiningen 1, you'll need to install the following plugins:
 If you're using Leiningen 1, you'll need to install the following plugins:
 
     lein plugin install lein-newnew 0.3.5
-    lein plugin install compojure-app/lein-template 0.2.6
+    lein plugin install compojure-app/lein-template 0.2.7
 
-If you're using Leiningen 2, add a plugin dependency on `[compojure-app/lein-template "0.2.6"]` to your `~/.lein/profiles.clj`.
+If you're using Leiningen 2, add a plugin dependency on `[compojure-app/lein-template "0.2.7"]` to your `~/.lein/profiles.clj`.
 
 ## Usage
 
