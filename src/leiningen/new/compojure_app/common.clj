@@ -6,4 +6,4 @@
   [:head
    [:title "Welcome to {{name}}"]
    (include-css "/css/screen.css")]
-  (into [:body] body))
+  [:body body])
