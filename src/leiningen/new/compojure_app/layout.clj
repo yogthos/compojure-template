@@ -1,8 +1,8 @@
-(ns {{name}}.common
+(ns {{name}}.views.layout
   (:use [hiccup.def :only [defhtml]] 
         [hiccup.page :only [include-css]]))
        
-(defhtml layout [& body]  
+(defhtml common [& body]  
   [:head
    [:title "Welcome to {{name}}"]
    (include-css "/css/screen.css")]
