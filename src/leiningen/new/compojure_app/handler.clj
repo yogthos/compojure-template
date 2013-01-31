@@ -14,7 +14,6 @@
   (println "{{name}} is shutting down"))
   
 (defroutes app-routes
-  (GET "/" [] (home))
   (route/resources "/")
   (route/not-found "Not Found"))
 
