@@ -3,9 +3,9 @@
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [compojure "1.1.5"]
-                 [hiccup "1.0.2"]
+                 [hiccup "1.0.3"]
                  [ring-server "0.2.8"]]
-  :plugins [[lein-ring "0.8.3"]]
+  :plugins [[lein-ring "0.8.5"]]
   :ring {:handler {{name}}.handler/war-handler
          :init {{name}}.handler/init
          :destroy {{name}}.handler/destroy}
