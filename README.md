@@ -9,29 +9,20 @@ It also provides a main for running standalone and a handler for WAR deployment 
 
 [1]: http://compojure.org
 
-## Installation
-
-If you're using Leiningen 2, add a plugin dependency on `[compojure-app/lein-template "0.2.7"]` to your `~/.lein/profiles.clj`.
-
-
-If you're using Leiningen 1, you'll need to install the following plugins:
-
-    lein plugin install lein-newnew 0.3.5
-    lein plugin install compojure-app/lein-template 0.2.7
-
-
 ## Usage
 
 Run the following command to create a new Compojure project:
 
     lein new compojure-app <your project name>
 
-To build as standalone run:
+To create a standalone executable from your project inside the project directory:
 
 ```bash
-lein uberjar
+lein ring uberjar
 ```
-and you'll be able to run the resulting standalone jar as you would with any other executable Java jar:
+
+You can then run the resulting jar as you would with any other Java executable:
+
 ```bash
 java -jar target/myapp-0.1.0-SNAPSHOT-standalone.jar
 
