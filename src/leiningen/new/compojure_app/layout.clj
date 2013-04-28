@@ -1,6 +1,6 @@
 (ns {{name}}.views.layout
-  (:use [hiccup.def :only [defhtml]] 
-        [hiccup.page :only [include-css]]))
+  (:require [hiccup.def :refer [defhtml]] 
+            [hiccup.page :refer [include-css]]))
        
 (defhtml common [& body]  
   [:head
