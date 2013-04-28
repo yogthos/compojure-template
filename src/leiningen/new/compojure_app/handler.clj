@@ -1,11 +1,11 @@
 (ns {{name}}.handler
-  (:use compojure.core                
-        ring.middleware.resource
-        ring.middleware.file-info
-        hiccup.middleware
-        {{name}}.routes.home)
-  (:require [compojure.handler :as handler]
-            [compojure.route :as route]))
+  (:require [compojure.core :refer [defroutes route]]
+            [ring.middleware.resource :refer [wrap-resource]]
+            [ring.middleware.file-info :refer [wrap-file-info]]
+            [hiccup.middleware :refer [wrap-base-url]]
+            [compojure.handler :as handler]
+            [compojure.route :as route]
+            [{{name}}.routes.home :refer [home-routes]]))
 
 (defn init []
   (println "{{name}} is starting"))
