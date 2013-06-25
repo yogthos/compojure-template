@@ -1,6 +1,5 @@
 (ns {{name}}.views.layout
-  (:require [hiccup.def :refer [defhtml]]
-            [hiccup.page :refer [html5 include-css]]))
+  (:require [hiccup.page :refer [html5 include-css]]))
 
 (defn common [& body]
   (html5
