@@ -6,7 +6,7 @@
                  [hiccup "1.0.4"]
                  [ring-server "0.3.0"]]
   :plugins [[lein-ring "0.8.7"]]
-  :ring {:handler {{name}}.handler/war-handler
+  :ring {:handler {{name}}.handler/app
          :init {{name}}.handler/init
          :destroy {{name}}.handler/destroy}
   :profiles
