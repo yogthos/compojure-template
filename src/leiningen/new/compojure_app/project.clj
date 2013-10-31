@@ -9,6 +9,7 @@
   :ring {:handler {{name}}.handler/app
          :init {{name}}.handler/init
          :destroy {{name}}.handler/destroy}
+  :aot :all
   :profiles
   {:production
    {:ring
