@@ -1,9 +1,9 @@
 # Compojure-Template
 
-A Leiningen template for projects using [Compojure][1]. 
+A Leiningen template for projects using [Compojure][1].
 
-This tempate is a batteries included version of the official [compojure-template](https://github.com/weavejester/compojure-template). 
-The template sets up several useful wrappers, such as the ones for serving static resources and handling mime types. 
+This tempate is a batteries included version of the official [compojure-template](https://github.com/weavejester/compojure-template).
+The template sets up several useful wrappers, such as the ones for serving static resources and handling mime types.
 It also provides a main for running standalone and a handler for WAR deployment which provides correct context resolution.
 
 
