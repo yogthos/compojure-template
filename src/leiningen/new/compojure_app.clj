@@ -13,12 +13,12 @@
   (let [data {:name name
               :sanitized (sanitize name)
               :year (year)}
-        render #((renderer "compojure_app") % data)]        
+        render #((renderer "compojure_app") % data)]
     (println "Generating a lovely new Compojure project named" (str name "..."))
     (->files data
              [".gitignore"  (render "gitignore")]
              ["project.clj" (render "project.clj")]
-             ["README.md"   (render "README.md")]             
+             ["README.md"   (render "README.md")]
              ["src/{{sanitized}}/repl.clj"         (render "repl.clj")]
              ["src/{{sanitized}}/handler.clj"      (render "handler.clj")]
              ["src/{{sanitized}}/routes/home.clj"  (render "home.clj")]
