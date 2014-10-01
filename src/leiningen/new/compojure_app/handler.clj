@@ -1,11 +1,10 @@
 (ns {{name}}.handler
-  (:require [compojure.core :refer [defroutes routes]]
-            [ring.middleware.resource :refer [wrap-resource]]
-            [ring.middleware.file-info :refer [wrap-file-info]]
+  (:require [compojure.core :refer [GET defroutes routes]]
             [hiccup.middleware :refer [wrap-base-url]]
-            [compojure.handler :as handler]
-            [compojure.route :as route]
-            [{{name}}.routes.home :refer [home-routes]]))
+            [hiccup.page :refer [html5 include-css]]
+            [ring.middleware.defaults
+             :refer [wrap-defaults site-defaults]]
+            [compojure.route :as route]))
 
 (defn init []
   (println "{{name}} is starting"))
@@ -13,13 +12,22 @@
 (defn destroy []
   (println "{{name}} is shutting down"))
 
+(defn home []
+  (html5
+    [:head
+     [:title "Welcome to {{name}}"]
+     (include-css "/css/screen.css")]
+    [:body [:h1 "Hello World!"]]))
+
+
 (defroutes app-routes
+  (GET "/" [] (home))
   (route/resources "/")
   (route/not-found "Not Found"))
 
 (def app
-  (-> (routes home-routes app-routes)
-      (handler/site)
+  (-> app-routes
+      (wrap-defaults site-defaults)
       (wrap-base-url)))
 
 
