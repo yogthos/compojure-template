@@ -23,5 +23,4 @@
              ["resources/public/css/screen.css"    (render "screen.css")]
              "resources/public/js"
              "resources/public/img"
-             "src/{{sanitized}}/models"
              ["test/{{sanitized}}/test/handler.clj" (render "handler_test.clj")])))
