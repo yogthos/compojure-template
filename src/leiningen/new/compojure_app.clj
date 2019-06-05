@@ -1,15 +1,9 @@
 (ns leiningen.new.compojure-app
-  (:use [leiningen.new.templates :only [renderer sanitize year ->files]]
-        [leinjacker.utils :only [lein-generation]]))
-
-(defn check-lein-version []
-  (if (< (lein-generation) 2)
-    (throw (new Exception "Leiningen v2 is required..."))))
+  (:use [leiningen.new.templates :only [renderer sanitize year ->files]]))
 
 (defn compojure-app
   "Create a new Compojure project"
   [name]
-  (check-lein-version)
   (let [data {:name name
               :sanitized (sanitize name)
               :year (year)}
